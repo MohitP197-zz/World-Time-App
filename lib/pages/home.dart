@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
 
     data = ModalRoute.of(context).settings.arguments;
 
-    print(data);
+    // print(data);
 
     return Scaffold(
       // Safe area pushed child to the safer area where it can be seen
