@@ -13,16 +13,16 @@ class _ChooseLocationState extends State<ChooseLocation> {
     // Similate a network request for a username
 
     // After adding await, the function with await have to finish first, then only other function runs
-    await Future.delayed(Duration(seconds: 3), () {
-      print('Mohit');
+    String username = await Future.delayed(Duration(seconds: 3), () {
+      return 'Mohit';
     });
 
     // Simulate network request to get bio of the username
-    Future.delayed(Duration(seconds: 2), () {
-      print('Mohit, is a programmer');
+    String bio = await Future.delayed(Duration(seconds: 2), () {
+      return 'Mohit, is a programmer';
     });
 
-    print('statement');
+    print('$username - $bio');
   }
 
   @override
