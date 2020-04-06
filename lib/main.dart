@@ -6,7 +6,7 @@ import 'package:world_time_app/pages/loading.dart';
 void main() => runApp(
       MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: '/home',
+        initialRoute: '/',
         routes: {
           // Context object keeps track of where we in the widget tree we are
           '/': (context) => Loading(),
